@@ -233,11 +233,22 @@
                     <connections>
                         <outlet property="collectionView" destination="d9Y-s8-8dG" id="WnN-ej-XeL"/>
                         <outlet property="projectNameLabel" destination="kSG-9D-QCc" id="9fn-dG-ThG"/>
+                        <segue destination="2qE-ft-eaE" kind="push" identifier="classDetailsSegue" id="7d1-Cy-FyA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpl-11-kdd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="129.61956521739131"/>
+        </scene>
+        <!--ClassDetails-->
+        <scene sceneID="BQU-Kp-XQS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ClassDetails" id="2qE-ft-eaE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BPm-cq-IKy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bu-tT-8sK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="130"/>
         </scene>
     </scenes>
     <resources>
