@@ -12,6 +12,7 @@
 		AA942A9EFC89F3DBFD40D7B4 /* Pods_Constructify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAA17EC6074A782D2F1D21A /* Pods_Constructify.framework */; };
 		B92267D2233F95BB00D2E66A /* ConColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92267D1233F95BB00D2E66A /* ConColors.swift */; };
 		B92267D4233F966A00D2E66A /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92267D3233F966A00D2E66A /* UIColor+.swift */; };
+		B9240034233FC68B005ADA49 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9240033233FC68B005ADA49 /* UINavigationController+.swift */; };
 		B9394427233F097700ECAED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9394426233F097700ECAED1 /* AppDelegate.swift */; };
 		B9394429233F097700ECAED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9394428233F097700ECAED1 /* SceneDelegate.swift */; };
 		B939442B233F097700ECAED1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939442A233F097700ECAED1 /* LoginViewController.swift */; };
@@ -58,6 +59,7 @@
 		98E35C7586A7A463B539B619 /* Pods-ConstructifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstructifyTests.debug.xcconfig"; path = "Target Support Files/Pods-ConstructifyTests/Pods-ConstructifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B92267D1233F95BB00D2E66A /* ConColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConColors.swift; sourceTree = "<group>"; };
 		B92267D3233F966A00D2E66A /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		B9240033233FC68B005ADA49 /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		B9394423233F097700ECAED1 /* Constructify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Constructify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9394426233F097700ECAED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9394428233F097700ECAED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				B9505D0D233F3E8300812709 /* UIView+.swift */,
 				B92267D3233F966A00D2E66A /* UIColor+.swift */,
+				B9240033233FC68B005ADA49 /* UINavigationController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9505D0E233F3E8300812709 /* UIView+.swift in Sources */,
+				B9240034233FC68B005ADA49 /* UINavigationController+.swift in Sources */,
 				B92267D4233F966A00D2E66A /* UIColor+.swift in Sources */,
 				B939442B233F097700ECAED1 /* LoginViewController.swift in Sources */,
 				B9C23696233F719800CCE30B /* ProjectCollectionViewCell.swift in Sources */,

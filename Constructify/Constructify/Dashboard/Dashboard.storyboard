@@ -435,11 +435,22 @@ today?</string>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="collectionView" destination="uzU-ys-Gzy" id="8eK-m4-8Xe"/>
+                        <segue destination="PJB-bB-mhA" kind="push" identifier="projectDetailsSegue" id="em2-el-dFK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37m-nI-LUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="592.75362318840587" y="-206.25000000000003"/>
+        </scene>
+        <!--ProjectDetails-->
+        <scene sceneID="aZN-EE-Rn1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProjectDetails" id="PJB-bB-mhA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QL9-tH-3rH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBh-mJ-x5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="-206"/>
         </scene>
     </scenes>
     <resources>

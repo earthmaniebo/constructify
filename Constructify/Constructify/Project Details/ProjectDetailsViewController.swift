@@ -10,11 +10,20 @@ import UIKit
 
 class ProjectDetailsViewController: UIViewController {
 
+    @IBAction func didTapBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
         
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 

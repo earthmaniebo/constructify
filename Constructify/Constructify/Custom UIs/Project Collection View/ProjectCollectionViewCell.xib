@@ -31,8 +31,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celurian Ridge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxB-0z-Lqa">
-                                        <rect key="frame" x="16" y="135" width="112" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celurian Ridge" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxB-0z-Lqa">
+                                        <rect key="frame" x="16" y="135.5" width="168" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -45,6 +45,7 @@
                                     <constraint firstItem="AgH-9O-Ppk" firstAttribute="top" secondItem="K8W-Mh-yB7" secondAttribute="top" id="Gqy-5o-Po2"/>
                                     <constraint firstAttribute="bottom" secondItem="WxB-0z-Lqa" secondAttribute="bottom" constant="24" id="IKQ-UQ-rdn"/>
                                     <constraint firstAttribute="trailing" secondItem="AgH-9O-Ppk" secondAttribute="trailing" id="Lf8-C5-X7A"/>
+                                    <constraint firstAttribute="trailing" secondItem="WxB-0z-Lqa" secondAttribute="trailing" constant="16" id="MKA-b6-EYU"/>
                                     <constraint firstItem="WxB-0z-Lqa" firstAttribute="leading" secondItem="K8W-Mh-yB7" secondAttribute="leading" constant="16" id="cPC-JD-fC0"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
