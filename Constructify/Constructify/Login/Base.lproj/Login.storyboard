@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xf1-Rt-CrJ">
-                                <rect key="frame" x="32" y="471.5" width="311" height="76"/>
+                                <rect key="frame" x="32" y="493.5" width="311" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R81-WS-D6a">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="34"/>
@@ -58,7 +58,7 @@
                                         <rect key="frame" x="0.0" y="42" width="311" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.84705882352941175" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Login">
-                                            <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -78,13 +78,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-ux-9MA">
-                                <rect key="frame" x="32" y="596" width="61" height="17"/>
+                                <rect key="frame" x="32" y="618" width="61" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.7803921568627451" green="0.58823529411764708" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problem logging in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srZ-Ts-cbR">
-                                <rect key="frame" x="206.5" y="596" width="136.5" height="17"/>
+                                <rect key="frame" x="206.5" y="618" width="136.5" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.78039215689999997" green="0.58823529409999997" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xf1-Rt-CrJ" firstAttribute="top" secondItem="noh-Ka-6PA" secondAttribute="bottom" constant="32" id="1cw-bF-uxU"/>
+                            <constraint firstItem="xf1-Rt-CrJ" firstAttribute="top" secondItem="noh-Ka-6PA" secondAttribute="bottom" constant="54" id="1cw-bF-uxU"/>
                             <constraint firstItem="s0z-GX-m7N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2p5-ZN-n0g"/>
                             <constraint firstItem="s0L-NA-6DN" firstAttribute="top" secondItem="nEH-fV-izs" secondAttribute="bottom" constant="32" id="7ce-yc-GTp"/>
                             <constraint firstItem="M0q-Sf-C7N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="8hS-2L-7j9"/>
@@ -108,10 +108,10 @@
                             <constraint firstItem="noh-Ka-6PA" firstAttribute="leading" secondItem="M0q-Sf-C7N" secondAttribute="leading" id="Gpx-qw-jWN"/>
                             <constraint firstItem="l6f-ux-4ie" firstAttribute="top" secondItem="s0z-GX-m7N" secondAttribute="bottom" constant="-45" id="KM5-aA-VNE"/>
                             <constraint firstItem="s0L-NA-6DN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="QKj-fW-C4R"/>
+                            <constraint firstItem="sub-Lj-wMt" firstAttribute="top" secondItem="xpt-ux-9MA" secondAttribute="bottom" constant="32" id="U84-OR-oNi"/>
                             <constraint firstItem="srZ-Ts-cbR" firstAttribute="centerY" secondItem="xpt-ux-9MA" secondAttribute="centerY" id="cIy-Eg-o4L"/>
                             <constraint firstAttribute="trailing" secondItem="s0z-GX-m7N" secondAttribute="trailing" id="gcY-Ra-DAD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="noh-Ka-6PA" secondAttribute="trailing" constant="16" id="h6C-HZ-3Cb"/>
-                            <constraint firstItem="sub-Lj-wMt" firstAttribute="top" secondItem="xpt-ux-9MA" secondAttribute="bottom" constant="54" id="hhq-po-7zi"/>
                             <constraint firstItem="s0z-GX-m7N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hxn-UB-cNQ"/>
                             <constraint firstItem="srZ-Ts-cbR" firstAttribute="trailing" secondItem="xf1-Rt-CrJ" secondAttribute="trailing" id="jv8-Xd-epu"/>
                             <constraint firstItem="M0q-Sf-C7N" firstAttribute="top" secondItem="l6f-ux-4ie" secondAttribute="bottom" constant="16" id="s5I-Ya-SC2"/>

@@ -23,6 +23,7 @@
 		B9505DF2233F56C100812709 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9505DF1233F56C100812709 /* Dashboard.storyboard */; };
 		B9505DF5233F5ABA00812709 /* Inventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9505DF4233F5ABA00812709 /* Inventory.storyboard */; };
 		B9505DF8233F5ACA00812709 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9505DF7233F5ACA00812709 /* Profile.storyboard */; };
+		B9505DFA233F5D1B00812709 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9505DF9233F5D1B00812709 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B9505DF1233F56C100812709 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		B9505DF4233F5ABA00812709 /* Inventory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inventory.storyboard; sourceTree = "<group>"; };
 		B9505DF7233F5ACA00812709 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B9505DF9233F5D1B00812709 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BFA07B640DFB2B6923FA9A28 /* Pods-ConstructifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstructifyUITests.release.xcconfig"; path = "Target Support Files/Pods-ConstructifyUITests/Pods-ConstructifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C5CE409EF9157E5D89F83DBF /* Pods-ConstructifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstructifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConstructifyUITests/Pods-ConstructifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A5A7EB850E1C39201ADEDA /* Pods-Constructify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Constructify.debug.xcconfig"; path = "Target Support Files/Pods-Constructify/Pods-Constructify.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B9505DF1233F56C100812709 /* Dashboard.storyboard */,
+				B9505DF9233F5D1B00812709 /* DashboardViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			files = (
 				B9505D0E233F3E8300812709 /* UIView+.swift in Sources */,
 				B939442B233F097700ECAED1 /* LoginViewController.swift in Sources */,
+				B9505DFA233F5D1B00812709 /* DashboardViewController.swift in Sources */,
 				B9394427233F097700ECAED1 /* AppDelegate.swift in Sources */,
 				B9394429233F097700ECAED1 /* SceneDelegate.swift in Sources */,
 			);
