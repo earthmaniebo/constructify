@@ -180,11 +180,22 @@
                         <outlet property="classNameLabel" destination="dVa-YL-1nL" id="WQv-2f-ood"/>
                         <outlet property="collectionView" destination="a4g-aW-xT8" id="WCb-m6-ss3"/>
                         <outlet property="typeNameLabel" destination="3kf-5s-ZtD" id="jm5-mh-S8F"/>
+                        <segue destination="ARc-hT-eel" kind="push" identifier="supplyDetailsSegue" id="SUH-zV-V9w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJB-n8-n13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
+        </scene>
+        <!--SupplyDetails-->
+        <scene sceneID="jMF-qA-6ks">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SupplyDetails" id="ARc-hT-eel" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dCA-co-baQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJA-a0-IqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="137"/>
         </scene>
     </scenes>
     <resources>

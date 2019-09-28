@@ -64,9 +64,9 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(named: "pumpkins")
         case 1:
             cell.progressBar.setProgress(0.60, animated: true)
-            cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
+            cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
             cell.nameLabel.text = "Grassy Leaves"
-            cell.outOfLabel.text = "30 of 100"
+            cell.outOfLabel.text = "30 of 50"
             cell.imageView.image = UIImage(named: "grassy_leaves")
         case 2:
             cell.progressBar.setProgress(0.06, animated: true)
@@ -91,8 +91,8 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
 extension ClassDetailsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 2 {
-            performSegue(withIdentifier: "classDetailsSegue", sender: self)
+        if indexPath.item == 0 {
+            performSegue(withIdentifier: "supplyDetailsSegue", sender: self)
         }
     }
 }

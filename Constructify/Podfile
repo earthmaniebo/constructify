@@ -11,6 +11,7 @@ target 'Constructify' do
   pod 'M13ProgressSuite'
   pod 'Kingfisher'
   pod 'Alamofire'
+  pod 'DropDown'
 
   target 'ConstructifyTests' do
     inherit! :search_paths

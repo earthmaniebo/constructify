@@ -29,6 +29,8 @@
 		B9505DFA233F5D1B00812709 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9505DF9233F5D1B00812709 /* DashboardViewController.swift */; };
 		B9541DF7233FF8E4003968B4 /* ClassDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9541DF6233FF8E4003968B4 /* ClassDetails.storyboard */; };
 		B9541DF9233FF8F5003968B4 /* ClassDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9541DF8233FF8F5003968B4 /* ClassDetailsViewController.swift */; };
+		B9541DFC23400BA2003968B4 /* SupplyDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9541DFB23400BA2003968B4 /* SupplyDetails.storyboard */; };
+		B9541DFE23400BAC003968B4 /* SupplyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9541DFD23400BAC003968B4 /* SupplyDetailsViewController.swift */; };
 		B9A48467233FB4A3002A84E6 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A48466233FB4A3002A84E6 /* ProjectDetailsViewController.swift */; };
 		B9A48469233FB6AA002A84E6 /* ProjectDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A48468233FB6AA002A84E6 /* ProjectDetails.storyboard */; };
 		B9C23694233F718400CCE30B /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C23693233F718400CCE30B /* ProjectCollectionViewCell.xib */; };
@@ -86,6 +88,8 @@
 		B9505DF9233F5D1B00812709 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B9541DF6233FF8E4003968B4 /* ClassDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassDetails.storyboard; sourceTree = "<group>"; };
 		B9541DF8233FF8F5003968B4 /* ClassDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsViewController.swift; sourceTree = "<group>"; };
+		B9541DFB23400BA2003968B4 /* SupplyDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SupplyDetails.storyboard; sourceTree = "<group>"; };
+		B9541DFD23400BAC003968B4 /* SupplyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyDetailsViewController.swift; sourceTree = "<group>"; };
 		B9A48466233FB4A3002A84E6 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
 		B9A48468233FB6AA002A84E6 /* ProjectDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectDetails.storyboard; sourceTree = "<group>"; };
 		B9C23693233F718400CCE30B /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			children = (
 				B9394426233F097700ECAED1 /* AppDelegate.swift */,
 				B9394428233F097700ECAED1 /* SceneDelegate.swift */,
+				B9541DFA23400B35003968B4 /* Supply Details */,
 				B9541DF5233FF5CE003968B4 /* Class Details */,
 				B9A48465233FB48D002A84E6 /* Project Details */,
 				B9505DF6233F5ABF00812709 /* Profile */,
@@ -265,6 +270,15 @@
 				B9541DF8233FF8F5003968B4 /* ClassDetailsViewController.swift */,
 			);
 			path = "Class Details";
+			sourceTree = "<group>";
+		};
+		B9541DFA23400B35003968B4 /* Supply Details */ = {
+			isa = PBXGroup;
+			children = (
+				B9541DFB23400BA2003968B4 /* SupplyDetails.storyboard */,
+				B9541DFD23400BAC003968B4 /* SupplyDetailsViewController.swift */,
+			);
+			path = "Supply Details";
 			sourceTree = "<group>";
 		};
 		B9A48465233FB48D002A84E6 /* Project Details */ = {
@@ -417,6 +431,7 @@
 			files = (
 				B9A48469233FB6AA002A84E6 /* ProjectDetails.storyboard in Resources */,
 				B9394433233F097700ECAED1 /* LaunchScreen.storyboard in Resources */,
+				B9541DFC23400BA2003968B4 /* SupplyDetails.storyboard in Resources */,
 				B9505DF2233F56C100812709 /* Dashboard.storyboard in Resources */,
 				B9394430233F097700ECAED1 /* Assets.xcassets in Resources */,
 				B939442E233F097700ECAED1 /* Login.storyboard in Resources */,
@@ -544,6 +559,7 @@
 				B939442B233F097700ECAED1 /* LoginViewController.swift in Sources */,
 				B9C23696233F719800CCE30B /* ProjectCollectionViewCell.swift in Sources */,
 				B9505DFA233F5D1B00812709 /* DashboardViewController.swift in Sources */,
+				B9541DFE23400BAC003968B4 /* SupplyDetailsViewController.swift in Sources */,
 				B92267D2233F95BB00D2E66A /* ConColors.swift in Sources */,
 				B9394427233F097700ECAED1 /* AppDelegate.swift in Sources */,
 				B9A48467233FB4A3002A84E6 /* ProjectDetailsViewController.swift in Sources */,
