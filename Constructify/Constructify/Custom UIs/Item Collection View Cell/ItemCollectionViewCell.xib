@@ -64,11 +64,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVH-5h-9qp">
-                                <rect key="frame" x="106" y="58" width="120" height="25"/>
+                                <rect key="frame" x="106" y="58" width="80" height="25"/>
                                 <color key="backgroundColor" red="1" green="0.84705882349999995" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="TXS-tG-FgC"/>
-                                    <constraint firstAttribute="width" constant="120" id="iQj-RS-chG"/>
+                                    <constraint firstAttribute="width" constant="80" id="iQj-RS-chG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Replenish">

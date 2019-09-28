@@ -55,7 +55,7 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
             cell.percentageLabel.text = "96%"
             cell.outOfLabel.text = "3000 of 3125"
         case 1:
-            cell.progressBar.setProgress(0.77, animated: true)
+            cell.progressBar.setProgress(0.30, animated: true)
             cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
             cell.nameLabel.text = "Carpentry"
             cell.percentageLabel.text = "30%"
