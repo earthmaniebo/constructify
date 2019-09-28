@@ -38,15 +38,13 @@ extension DashboardViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "projectCell", for: indexPath) as! ProjectCollectionViewCell
-        
+        cell.progressBar.borderWidth = 0
         if indexPath.item == 1 {
             cell.progressBar.setProgress(0.8, animated: true)
             cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
-            cell.progressBar.borderWidth = 0
         } else {
             cell.progressBar.setProgress(0.3, animated: true)
             cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
-            cell.progressBar.borderWidth = 0
             cell.projectNameLabel.text = "Sonrisa Hotel"
             cell.imageView.image = UIImage(named: "sonrisa")
         }
