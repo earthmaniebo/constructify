@@ -34,20 +34,20 @@
                                     <constraint firstAttribute="height" constant="136" id="f1L-8Z-QyI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Anne" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0q-Sf-C7N">
-                                <rect key="frame" x="32" y="287" width="311" height="95.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Christine" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0q-Sf-C7N">
+                                <rect key="frame" x="32" y="287" width="311" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.30196078431372547" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back. Login to your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-Ka-6PA">
-                                <rect key="frame" x="32" y="398.5" width="311" height="41"/>
+                                <rect key="frame" x="32" y="351" width="311" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xf1-Rt-CrJ">
-                                <rect key="frame" x="32" y="493.5" width="311" height="76"/>
+                                <rect key="frame" x="32" y="452" width="311" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R81-WS-D6a">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="34"/>
@@ -98,7 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xf1-Rt-CrJ" firstAttribute="top" secondItem="noh-Ka-6PA" secondAttribute="bottom" constant="54" id="1cw-bF-uxU"/>
+                            <constraint firstItem="xf1-Rt-CrJ" firstAttribute="top" secondItem="noh-Ka-6PA" secondAttribute="bottom" constant="60" id="1cw-bF-uxU"/>
                             <constraint firstItem="s0z-GX-m7N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2p5-ZN-n0g"/>
                             <constraint firstItem="s0L-NA-6DN" firstAttribute="top" secondItem="nEH-fV-izs" secondAttribute="bottom" constant="32" id="7ce-yc-GTp"/>
                             <constraint firstItem="M0q-Sf-C7N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="8hS-2L-7j9"/>

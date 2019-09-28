@@ -199,7 +199,8 @@
 		B9505C31233F39BD00812709 /* Custom UIs */ = {
 			isa = PBXGroup;
 			children = (
-				B9C23692233F70FB00CCE30B /* Project Collection View */,
+				B9E6CFB9233FE70600EF2F5A /* Item Collection View Cell */,
+				B9C23692233F70FB00CCE30B /* Project Collection View Cell */,
 				B92267D1233F95BB00D2E66A /* ConColors.swift */,
 			);
 			path = "Custom UIs";
@@ -257,13 +258,20 @@
 			path = "Project Details";
 			sourceTree = "<group>";
 		};
-		B9C23692233F70FB00CCE30B /* Project Collection View */ = {
+		B9C23692233F70FB00CCE30B /* Project Collection View Cell */ = {
 			isa = PBXGroup;
 			children = (
 				B9C23693233F718400CCE30B /* ProjectCollectionViewCell.xib */,
 				B9C23695233F719800CCE30B /* ProjectCollectionViewCell.swift */,
 			);
-			path = "Project Collection View";
+			path = "Project Collection View Cell";
+			sourceTree = "<group>";
+		};
+		B9E6CFB9233FE70600EF2F5A /* Item Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Item Collection View Cell";
 			sourceTree = "<group>";
 		};
 		F39B62FC8A9C2EEC5E80E744 /* Pods */ = {
