@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="projectCell" id="lO8-RZ-x2T" customClass="ProjectCollectionViewCell" customModule="Constructify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zHh-Kq-M3X">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-DJ-Icw">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8W-Mh-yB7">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cerulean" translatesAutoresizingMaskIntoConstraints="NO" id="AgH-9O-Ppk">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celurian Ridge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxB-0z-Lqa">
+                                        <rect key="frame" x="16" y="135" width="112" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="AgH-9O-Ppk" firstAttribute="leading" secondItem="K8W-Mh-yB7" secondAttribute="leading" id="0Qe-S6-Q8h"/>
+                                    <constraint firstAttribute="bottom" secondItem="AgH-9O-Ppk" secondAttribute="bottom" id="0gp-1d-gOE"/>
+                                    <constraint firstItem="AgH-9O-Ppk" firstAttribute="top" secondItem="K8W-Mh-yB7" secondAttribute="top" id="Gqy-5o-Po2"/>
+                                    <constraint firstAttribute="bottom" secondItem="WxB-0z-Lqa" secondAttribute="bottom" constant="24" id="IKQ-UQ-rdn"/>
+                                    <constraint firstAttribute="trailing" secondItem="AgH-9O-Ppk" secondAttribute="trailing" id="Lf8-C5-X7A"/>
+                                    <constraint firstItem="WxB-0z-Lqa" firstAttribute="leading" secondItem="K8W-Mh-yB7" secondAttribute="leading" constant="16" id="cPC-JD-fC0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inventory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g45-ZL-lLZ">
+                                <rect key="frame" x="16" y="196" width="64" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG7-bU-ahh">
+                                <rect key="frame" x="153" y="196" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-Nf-F9r">
+                                <rect key="frame" x="16" y="222" width="168" height="8"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-JU-fJZ" customClass="M13ProgressViewBorderedBar">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="8"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="e7C-JU-fJZ" firstAttribute="leading" secondItem="dc1-Nf-F9r" secondAttribute="leading" id="7Or-kT-RbV"/>
+                                    <constraint firstAttribute="trailing" secondItem="e7C-JU-fJZ" secondAttribute="trailing" id="88b-11-2VR"/>
+                                    <constraint firstItem="e7C-JU-fJZ" firstAttribute="top" secondItem="dc1-Nf-F9r" secondAttribute="top" id="FD0-i8-oGc"/>
+                                    <constraint firstAttribute="height" constant="8" id="ael-l8-bAf"/>
+                                    <constraint firstAttribute="bottom" secondItem="e7C-JU-fJZ" secondAttribute="bottom" id="ygM-5f-2pD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dc1-Nf-F9r" firstAttribute="leading" secondItem="g45-ZL-lLZ" secondAttribute="leading" id="5uq-we-bal"/>
+                            <constraint firstItem="K8W-Mh-yB7" firstAttribute="leading" secondItem="Dvd-DJ-Icw" secondAttribute="leading" id="BAg-zo-zx7"/>
+                            <constraint firstItem="g45-ZL-lLZ" firstAttribute="leading" secondItem="Dvd-DJ-Icw" secondAttribute="leading" constant="16" id="Dsq-Yk-R8g"/>
+                            <constraint firstItem="MG7-bU-ahh" firstAttribute="centerY" secondItem="g45-ZL-lLZ" secondAttribute="centerY" id="LfE-u1-jyb"/>
+                            <constraint firstItem="K8W-Mh-yB7" firstAttribute="top" secondItem="Dvd-DJ-Icw" secondAttribute="top" id="MLL-I3-7uu"/>
+                            <constraint firstAttribute="trailing" secondItem="MG7-bU-ahh" secondAttribute="trailing" constant="16" id="XwL-aO-iKY"/>
+                            <constraint firstItem="dc1-Nf-F9r" firstAttribute="trailing" secondItem="MG7-bU-ahh" secondAttribute="trailing" id="ZMo-iF-ufW"/>
+                            <constraint firstItem="dc1-Nf-F9r" firstAttribute="top" secondItem="MG7-bU-ahh" secondAttribute="bottom" constant="8" id="d7j-Sj-wkv"/>
+                            <constraint firstItem="g45-ZL-lLZ" firstAttribute="top" secondItem="K8W-Mh-yB7" secondAttribute="bottom" constant="16" id="fQ2-Ul-5uT"/>
+                            <constraint firstAttribute="trailing" secondItem="K8W-Mh-yB7" secondAttribute="trailing" id="iEm-aA-71i"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Dvd-DJ-Icw" secondAttribute="bottom" id="40l-MO-IZl"/>
+                    <constraint firstAttribute="trailing" secondItem="Dvd-DJ-Icw" secondAttribute="trailing" id="UP9-tR-EbT"/>
+                    <constraint firstItem="Dvd-DJ-Icw" firstAttribute="leading" secondItem="zHh-Kq-M3X" secondAttribute="leading" id="Yx1-sz-Z8f"/>
+                    <constraint firstItem="Dvd-DJ-Icw" firstAttribute="top" secondItem="zHh-Kq-M3X" secondAttribute="top" id="eNl-yQ-JsE"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="222" height="202"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="AgH-9O-Ppk" id="P5R-CX-ljg"/>
+                <outlet property="percentageLabel" destination="MG7-bU-ahh" id="KLc-1q-HFs"/>
+                <outlet property="progressBar" destination="e7C-JU-fJZ" id="w4i-Ig-peq"/>
+                <outlet property="projectNameLabel" destination="WxB-0z-Lqa" id="eah-mI-SG3"/>
+            </connections>
+            <point key="canvasLocation" x="-31.884057971014496" y="141.29464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cerulean" width="180" height="180"/>
+    </resources>
+</document>
