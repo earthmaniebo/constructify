@@ -13,6 +13,8 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var projects = [Project]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +34,7 @@ extension DashboardViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return projects.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -45,9 +47,10 @@ extension DashboardViewController: UICollectionViewDataSource {
         } else {
             cell.progressBar.setProgress(0.3, animated: true)
             cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
-            cell.projectNameLabel.text = "Sonrisa Hotel"
             cell.imageView.image = UIImage(named: "sonrisa")
+            cell.percentageLabel.text = "30%"
         }
+        cell.projectNameLabel.text = projects[indexPath.item].name
         return cell
     }
 }

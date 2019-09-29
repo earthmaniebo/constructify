@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
+import ObjectMapper
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func didTapLogin(_ sender: Any) {
-        self.performSegue(withIdentifier: "mainSegue", sender: self)
+        MBProgressHUD.showAdded(to: view, animated: true)
+        let parameters = ["username": "themanager", "password": "password"]
+        Alamofire.request("\(ngrokAPI)/constructify/login", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            MBProgressHUD.hide(for: self.view, animated: true)
+            switch response.result {
+            case .success:
+                self.projects = Mapper<Project>().mapArray(JSONObject: response.result.value)!
+                self.performSegue(withIdentifier: "mainSegue", sender: self)
+            case .failure(_):
+                print()
+            }
+        }
     }
+    
+    var projects = [Project]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +41,18 @@ class LoginViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let id = segue.identifier else {
+            return
+        }
+        
+        if id == "mainSegue",
+            let tabBarController = segue.destination as? UITabBarController {
+            let vc = tabBarController.viewControllers?[0] as? DashboardViewController
+            vc?.projects = projects
+        }
     }
     
 }

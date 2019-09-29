@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let ngrokAPI = "https://7685bdde.ngrok.io"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
