@@ -49,7 +49,7 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
         cell.nameLabel.text = gSelectedCurrentInventory.materials[indexPath.item].name
         cell.outOfLabel.text = "\(gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!) of \(gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!)"
         
-        let percentage = NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!).dividing(by: NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!))
+        let percentage = NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!).dividing(by: NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!))
         
         cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
         if CGFloat(truncating: percentage) >= 0.6 {
