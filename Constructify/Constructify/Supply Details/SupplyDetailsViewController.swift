@@ -38,7 +38,7 @@ class SupplyDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let areas = ["Boom", "Tarat"]
+        let areas = ["Parking Lot", "Kitchen"]
         dropDown = DropDown()
         dropDown.width = 240
         dropDown.anchorView = areaLabel

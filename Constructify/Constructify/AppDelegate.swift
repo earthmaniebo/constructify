@@ -8,7 +8,10 @@
 
 import UIKit
 
-public let ngrokAPI = "https://7685bdde.ngrok.io"
+public let ngrokAPI = "http://6a203722.ngrok.io"
+public var gProjects = [Project]()
+public var gOrderRequest: OrderRequest!
+public var gSelectedProject: Project!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

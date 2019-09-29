@@ -8,12 +8,13 @@
 
 import UIKit
 import M13ProgressSuite
+import MBProgressHUD
+import Alamofire
+import ObjectMapper
 
 class DashboardViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var projects = [Project]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ extension DashboardViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return projects.count
+        return gProjects.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -50,7 +51,7 @@ extension DashboardViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(named: "sonrisa")
             cell.percentageLabel.text = "30%"
         }
-        cell.projectNameLabel.text = projects[indexPath.item].name
+        cell.projectNameLabel.text = gProjects[indexPath.item].name
         return cell
     }
 }
@@ -59,8 +60,18 @@ extension DashboardViewController: UICollectionViewDataSource {
 extension DashboardViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 0 {
-            performSegue(withIdentifier: "projectDetailsSegue", sender: self)
+        gSelectedProject = gProjects[indexPath.item]
+        MBProgressHUD.showAdded(to: view, animated: true)
+        Alamofire.request("\(ngrokAPI)/constructify/projects/\(gSelectedProject.id ?? 0)/orders", method: .get, encoding: JSONEncoding.default).responseJSON { response in
+            MBProgressHUD.hide(for: self.view, animated: true)
+            switch response.result {
+            case .success:
+                debugPrint(response)
+                gOrderRequest = Mapper<OrderRequest>().map(JSONObject: response.result.value)!
+                self.performSegue(withIdentifier: "projectDetailsSegue", sender: self)
+            case .failure(_):
+                print()
+            }
         }
     }
 }

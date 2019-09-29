@@ -231,6 +231,7 @@
                         <viewLayoutGuide key="safeArea" id="BFX-Nu-iEA"/>
                     </view>
                     <connections>
+                        <outlet property="areaNameLabel" destination="clg-j4-zDv" id="sBy-33-1b9"/>
                         <outlet property="collectionView" destination="d9Y-s8-8dG" id="WnN-ej-XeL"/>
                         <outlet property="projectNameLabel" destination="kSG-9D-QCc" id="9fn-dG-ThG"/>
                         <segue destination="2qE-ft-eaE" kind="push" identifier="classDetailsSegue" id="7d1-Cy-FyA"/>

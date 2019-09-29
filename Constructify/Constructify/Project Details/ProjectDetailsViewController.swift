@@ -13,6 +13,7 @@ class ProjectDetailsViewController: UIViewController {
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBOutlet weak var areaNameLabel: UILabel!
     @IBOutlet weak var projectNameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -23,6 +24,8 @@ class ProjectDetailsViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "itemCell")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        projectNameLabel.text = gSelectedProject.name
+        areaNameLabel.text = gOrderRequest.pendingRequests[0].areaName
     }
         
     
@@ -40,35 +43,47 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return gOrderRequest.currentInventory.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
         cell.progressBar.borderWidth = 0
+        cell.nameLabel.text = gOrderRequest.currentInventory[indexPath.item].className
+        
+        let materials = gOrderRequest.currentInventory[indexPath.item].materials
+        
+        var totalCurrentQty = 0
+        var totalInitialQty = 0
+        for mt in materials! {
+            totalCurrentQty += mt.currentQuantity
+            totalInitialQty += mt.initialQuantity
+        }
+        
+        let percentage = NSDecimalNumber(value: totalCurrentQty).dividing(by: NSDecimalNumber(value: totalInitialQty))
+        
+        let percentageText = Double(truncating: percentage.multiplying(by: 100)).rounded()
+        cell.outOfLabel.text = "\(totalCurrentQty) of \(totalInitialQty)"
+        cell.percentageLabel.text = "\(percentageText)%"
+        cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
+        if CGFloat(truncating: percentage) >= 0.6 {
+            cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
+        } else if CGFloat(truncating: percentage) < 0.6 && CFloat(truncating: percentage) > 0.3 {
+            cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
+        } else {
+            cell.progressBar.primaryColor = ConColors.redProgress.uiColor
+            cell.replenishButton.isHidden = false
+        }
+        
+        
         switch indexPath.item {
         case 0:
-            cell.progressBar.setProgress(0.96, animated: true)
-            cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
-            cell.nameLabel.text = "Electrical"
-            cell.percentageLabel.text = "96%"
-            cell.outOfLabel.text = "3000 of 3125"
+            print()
         case 1:
-            cell.progressBar.setProgress(0.30, animated: true)
-            cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
-            cell.nameLabel.text = "Carpentry"
-            cell.percentageLabel.text = "30%"
-            cell.outOfLabel.text = "30 of 100"
             cell.imageView.image = UIImage(named: "carpentry")
         case 2:
-            cell.progressBar.setProgress(0.10, animated: true)
-            cell.progressBar.primaryColor = ConColors.redProgress.uiColor
-            cell.nameLabel.text = "Miscellaneous"
-            cell.percentageLabel.text = "10%"
-            cell.outOfLabel.text = "100 of 1000"
             cell.imageView.image = UIImage(named: "misc")
-            cell.replenishButton.isHidden = false
         default:
             print()
         }

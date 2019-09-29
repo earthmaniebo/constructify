@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
             MBProgressHUD.hide(for: self.view, animated: true)
             switch response.result {
             case .success:
-                self.projects = Mapper<Project>().mapArray(JSONObject: response.result.value)!
+                gProjects = Mapper<Project>().mapArray(JSONObject: response.result.value)!
                 self.performSegue(withIdentifier: "mainSegue", sender: self)
             case .failure(_):
                 print()
@@ -41,18 +41,6 @@ class LoginViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-    
-    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let id = segue.identifier else {
-            return
-        }
-        
-        if id == "mainSegue",
-            let tabBarController = segue.destination as? UITabBarController {
-            let vc = tabBarController.viewControllers?[0] as? DashboardViewController
-            vc?.projects = projects
-        }
     }
     
 }
