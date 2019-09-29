@@ -13,6 +13,9 @@ public var gProjects = [Project]()
 public var gOrderRequest: OrderRequest!
 public var gSelectedProject: Project!
 public var gSelectedCurrentInventory: CurrentInventory!
+public var gArea = [Area]()
+public var gSelectedMaterial: Material!
+public var gselectedArea: Area!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

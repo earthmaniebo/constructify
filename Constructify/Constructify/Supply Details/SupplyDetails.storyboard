@@ -112,7 +112,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-z9-nDR">
-                                        <rect key="frame" x="16" y="258.33333333333337" width="159" height="30"/>
+                                        <rect key="frame" x="16" y="282.33333333333337" width="159" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.30196078430000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Use">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,7 +127,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-RC-5v1">
-                                        <rect key="frame" x="191" y="258.33333333333337" width="159" height="30"/>
+                                        <rect key="frame" x="191" y="282.33333333333337" width="159" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.84705882349999995" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Replenish">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,7 +154,7 @@
                                     <constraint firstAttribute="trailing" secondItem="J1X-sH-T8H" secondAttribute="trailing" constant="16" id="JB8-l6-HZx"/>
                                     <constraint firstItem="GP8-RC-5v1" firstAttribute="leading" secondItem="99C-z9-nDR" secondAttribute="trailing" constant="16" id="OI8-Fv-XxM"/>
                                     <constraint firstItem="GP8-RC-5v1" firstAttribute="trailing" secondItem="5O9-oG-dYq" secondAttribute="trailing" id="Pbv-6L-yEd"/>
-                                    <constraint firstItem="99C-z9-nDR" firstAttribute="top" secondItem="5O9-oG-dYq" secondAttribute="bottom" constant="16" id="Qa7-0n-G9i"/>
+                                    <constraint firstItem="99C-z9-nDR" firstAttribute="top" secondItem="5O9-oG-dYq" secondAttribute="bottom" constant="40" id="Qa7-0n-G9i"/>
                                     <constraint firstItem="cOE-Lr-yXx" firstAttribute="top" secondItem="fBk-si-yMB" secondAttribute="bottom" constant="16" id="SOF-7c-xC4"/>
                                     <constraint firstItem="fBk-si-yMB" firstAttribute="centerX" secondItem="nyd-Ma-wLS" secondAttribute="centerX" id="kTy-tI-GIj"/>
                                     <constraint firstItem="J1X-sH-T8H" firstAttribute="top" secondItem="YxI-5v-DWa" secondAttribute="bottom" constant="24" id="pNb-vV-pyV"/>

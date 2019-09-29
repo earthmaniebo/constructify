@@ -38,6 +38,7 @@
 		B9B9190423403548003CAB00 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9190323403548003CAB00 /* Material.swift */; };
 		B9B9190623403611003CAB00 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9190523403611003CAB00 /* OrderRequest.swift */; };
 		B9B9190823403680003CAB00 /* CurrentInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9190723403680003CAB00 /* CurrentInventory.swift */; };
+		B9B9190A23404EA7003CAB00 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9190923404EA7003CAB00 /* Area.swift */; };
 		B9C23694233F718400CCE30B /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C23693233F718400CCE30B /* ProjectCollectionViewCell.xib */; };
 		B9C23696233F719800CCE30B /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C23695233F719800CCE30B /* ProjectCollectionViewCell.swift */; };
 		B9E6CFBB233FE75300EF2F5A /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6CFBA233FE75300EF2F5A /* ItemCollectionViewCell.swift */; };
@@ -103,6 +104,7 @@
 		B9B9190323403548003CAB00 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		B9B9190523403611003CAB00 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
 		B9B9190723403680003CAB00 /* CurrentInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentInventory.swift; sourceTree = "<group>"; };
+		B9B9190923404EA7003CAB00 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		B9C23693233F718400CCE30B /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		B9C23695233F719800CCE30B /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		B9E6CFBA233FE75300EF2F5A /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				B9B9190323403548003CAB00 /* Material.swift */,
 				B9B9190523403611003CAB00 /* OrderRequest.swift */,
 				B9B9190723403680003CAB00 /* CurrentInventory.swift */,
+				B9B9190923404EA7003CAB00 /* Area.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				B9FBA1F12340260500B84EEC /* Project.swift in Sources */,
 				B939442B233F097700ECAED1 /* LoginViewController.swift in Sources */,
 				B9C23696233F719800CCE30B /* ProjectCollectionViewCell.swift in Sources */,
+				B9B9190A23404EA7003CAB00 /* Area.swift in Sources */,
 				B9B9190623403611003CAB00 /* OrderRequest.swift in Sources */,
 				B9B9190423403548003CAB00 /* Material.swift in Sources */,
 				B9505DFA233F5D1B00812709 /* DashboardViewController.swift in Sources */,

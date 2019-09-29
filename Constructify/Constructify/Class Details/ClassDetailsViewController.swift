@@ -51,6 +51,8 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
         
         let percentage = NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!).dividing(by: NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!))
         
+        gSelectedMaterial = gSelectedCurrentInventory.materials[indexPath.item]
+        
         cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
         if CGFloat(truncating: percentage) >= 0.6 {
             cell.progressBar.primaryColor = ConColors.greenProgress.uiColor

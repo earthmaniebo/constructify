@@ -33,6 +33,10 @@ class ProjectDetailsViewController: UIViewController {
         return .lightContent
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
+    
 }
 
 
@@ -79,7 +83,7 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
         
         switch indexPath.item {
         case 0:
-            print()
+            cell.imageView.image = UIImage(named: "electrical")
         case 1:
             cell.imageView.image = UIImage(named: "carpentry")
         case 2:
