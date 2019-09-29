@@ -51,7 +51,7 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
         cell.progressBar.borderWidth = 0
         cell.nameLabel.text = gOrderRequest.currentInventory[indexPath.item].className
-        
+
         let materials = gOrderRequest.currentInventory[indexPath.item].materials
         
         var totalCurrentQty = 0
@@ -65,7 +65,7 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
         
         let percentageText = Double(truncating: percentage.multiplying(by: 100)).rounded()
         cell.outOfLabel.text = "\(totalCurrentQty) of \(totalInitialQty)"
-        cell.percentageLabel.text = "\(percentageText)%"
+        cell.percentageLabel.text = "\(String(format:"%.f", percentageText))%"
         cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
         if CGFloat(truncating: percentage) >= 0.6 {
             cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
@@ -95,9 +95,8 @@ extension ProjectDetailsViewController: UICollectionViewDataSource {
 extension ProjectDetailsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 2 {
-            performSegue(withIdentifier: "classDetailsSegue", sender: self)
-        }
+        gSelectedCurrentInventory = gOrderRequest.currentInventory[indexPath.item]
+        performSegue(withIdentifier: "classDetailsSegue", sender: self)
     }
 }
 

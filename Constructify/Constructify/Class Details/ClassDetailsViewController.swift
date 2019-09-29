@@ -24,18 +24,9 @@ class ClassDetailsViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "itemCell")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        classNameLabel.text = gSelectedCurrentInventory.className
+        typeNameLabel.text = gSelectedCurrentInventory.className
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -47,7 +38,7 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return gSelectedCurrentInventory.materials.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -55,30 +46,29 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCollectionViewCell
         cell.progressBar.borderWidth = 0
         cell.percentageLabel.isHidden = true
+        cell.nameLabel.text = gSelectedCurrentInventory.materials[indexPath.item].name
+        cell.outOfLabel.text = "\(gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!) of \(gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!)"
+        
+        let percentage = NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!).dividing(by: NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!))
+        
+        cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
+        if CGFloat(truncating: percentage) >= 0.6 {
+            cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
+        } else if CGFloat(truncating: percentage) < 0.6 && CFloat(truncating: percentage) > 0.3 {
+            cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
+        } else {
+            cell.progressBar.primaryColor = ConColors.redProgress.uiColor
+            cell.replenishButton.isHidden = false
+        }
+        
         switch indexPath.item {
         case 0:
-            cell.progressBar.setProgress(0.20, animated: true)
-            cell.progressBar.primaryColor = ConColors.orangeProgress.uiColor
-            cell.nameLabel.text = "Halloween Pumpkins"
-            cell.outOfLabel.text = "10 of 50"
             cell.imageView.image = UIImage(named: "pumpkins")
         case 1:
-            cell.progressBar.setProgress(0.60, animated: true)
-            cell.progressBar.primaryColor = ConColors.greenProgress.uiColor
-            cell.nameLabel.text = "Grassy Leaves"
-            cell.outOfLabel.text = "30 of 50"
             cell.imageView.image = UIImage(named: "grassy_leaves")
         case 2:
-            cell.progressBar.setProgress(0.06, animated: true)
-            cell.progressBar.primaryColor = ConColors.redProgress.uiColor
-            cell.nameLabel.text = "Money Plants"
-            cell.outOfLabel.text = "60 of 900"
             cell.imageView.image = UIImage(named: "money_plants")
         case 3:
-            cell.progressBar.setProgress(0.0, animated: true)
-            cell.progressBar.primaryColor = .clear
-            cell.nameLabel.text = "Thistle"
-            cell.outOfLabel.text = "0 of 10"
             cell.imageView.image = UIImage(named: "thistle")
         default:
             print()
