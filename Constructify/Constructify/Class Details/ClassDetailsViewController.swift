@@ -51,7 +51,7 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
         
         let percentage = NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].currentQuantity!).dividing(by: NSDecimalNumber(value: gSelectedCurrentInventory.materials[indexPath.item].initialQuantity!))
         
-        gSelectedMaterial = gSelectedCurrentInventory.materials[indexPath.item]
+//        gSelectedMaterial = gSelectedCurrentInventory.materials[indexPath.item]
         
         cell.progressBar.setProgress(CGFloat(truncating: percentage), animated: true)
         if CGFloat(truncating: percentage) >= 0.6 {
@@ -83,9 +83,10 @@ extension ClassDetailsViewController: UICollectionViewDataSource {
 extension ClassDetailsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 0 {
+//        if indexPath.item == 0 {
+            gSelectedMaterial = gSelectedCurrentInventory.materials[indexPath.item]
             performSegue(withIdentifier: "supplyDetailsSegue", sender: self)
-        }
+//        }
     }
 }
 
